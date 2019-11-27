@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>ลงทะเบียนล่าช้าพิเศษสำหรับนักศึกษา</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+        body {
+         background-image: url("111.jpg");
+         background-repeat: no-repeat;
+         background-size: 2500px 6000px;
+         background-attachment: scroll;
+
+             }
+</style>
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%; 
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:  darkcyan;
+  color: black;
+
+}
+</style>
+<style>
+
+#regis {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 65%;
+}
+
+#regis td, #regis th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#regis tr:nth-of-type(){background-color: #f2f2f2;}
+
+#regis tr:hover {background-color: #ddd;}
+
+#regis th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:  cadetblue ;
+  color: white;
+  
+}
+
+.btn11{
+  width: 10%;
+  position: absolute;
+  top: 100%;
+  left:35%;
+  background: none;
+  border: 0px solid red ;
+  color: white;
+  padding: 4px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 9px 0;
+}
+
+.rset{
+  width: 10%;
+  position: absolute;
+  top: 100%;
+  left:55%;
+  background: none;
+  border: 0px solid red ;
+  color: white;
+  padding: 4px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 9px 0;
+}
+
+.search{
+
+left:100%;
+}
+.background{
+  background-color:  darkcyan;
+}
+ .out{
+          width: 100px;
+         left:89%;
+      position:fixed;
+    }
+    .ok{
+         width: 40px;
+        top: 47px;
+        left:1000px;
+        position:fixed;
+
+    }
+    .not{
+      top: 85.2px;
+      left:1000px;
+      position:fixed;
+}
+.case{
+  zoom:1.5;
+}
+
+
+<style type="text/css"> 
+/*   css ส่วนของรายการที่แสดง  */   
+.ui-autocomplete {   
+padding-right: 5px; 
+max-height:200px !important; 
+overflow: auto !important; 
+}   
+/*  css  ส่วนปุ่มคลิกเลือกแสดงรายการทั้งหมด*/   
+.showAll_btn{
+position: relative; 
+top: -2px;     
+border:2px solid;   
+font-size: 10px; 
+height: 20px; 
+width: 23px;
+} 
+</style>
+<style>
+table {
+  border-collapse: collapse;
+  width: 65%;
+}
+
+th, td {
+  text-align: center;
+  padding: 13px;
+ 
+}
+
+tr:nth-child(even) {background-color: #5c8a8a;}
+</style>
+<script type="text/javascript" src="jquery-ui-timepicker-addon.js"></script>
+
+<script type="text/javascript" src="jquery-ui-sliderAccess.js"></script>
+</head>
+
+<body>
+   
+               
+      <div class="w3-dropdown-hover w3-right">
+           <button class="out w3-button w3-cyan e w3-card-4 w3-hover-orange">Log out</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+     <a href="loginstu.html" class="ok w3-bar-item w3-button w3-dark-grey w3-hover-green w3-card-4">ตกลง</a>
+      <a href="student.html" class="not w3-bar-item w3-button w3-dark-grey w3-hover-red w3-card-4">ยกเลิก</a>
+        </div>
+      </div>
+
+ <div>
+
+
+ <center>
+ <h4>   
+<table id="customers">
+   <img class="img" src="tunewlogo.png"  alt="thammasat" align="left" width="200" height="100">
+
+             <div class="background w3-animate-zoom w3-display-container w3-center w3-card-4 w3-round-xlarge " style="height:90px; width:50%; left:0%;">
+
+                     <h5 class="<w3-text-white></w3-text-white>" style="text-shadow:1px 1px 0 #444">
+                <div class="w3-display-left w3-padding"><font color = "yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ </font>  &nbsp;  <font color = "white">ธนเศรษฐ์ </font>   &nbsp;  <font color = "yellow">นามสกุล </font>   &nbsp;  <font color = "white">เริงอารมณ์ </font>  &nbsp; &nbsp; &nbsp; <font color = "yellow">รหัสนักศึกษา : </font>  &nbsp; <font color = "white">6109650397 </font> </div></div>
+                <br>
+</table>
+      </h4>
+ </center>
+
+<form class="search" action="/action_page.php"> 
+   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <i class="fa fa-search ">&nbsp; &nbsp;  <b><font color = "black"> <strong> ค้นหารายวิชา</strong></font></b></i>: <input type="text"  placeholder="เช่น TU100"id="myInput" onkeyup="myFunction11()">
+<input class="w3-button w3-white w3-card-4 w3-round-xlarge w3-animate-zoom w3-hover-green" type="submit"  value="ค้นหา">
+<br>
+ <center>
+     <form class="w3-container w3-card-4">
+      <h5>   
+
+  <table  class="table  w3-card-4 w3-blue-grey w3-margin-top w3-animate-zoom" id="myTable"  style="width:80%;">
+ 
+    <tr class="w3-purple w3-card-4 ">
+      <th style="width:10%;">รหัสวิชา</th>
+      <th style="width:20%;">ชื่อวิชา</th>
+      <th style="width:10%;">section</th>
+      <th style="width:10%;">หน่วยกิต</th>
+      <th style="width:10%;">วัน/เวลา</th>
+
+    </tr>
+
+
+    <tr class=" w3-card-4 w3-hover-orange ">
+
+      <td ><input type="checkbox" id="myCheck"  onclick="myFunction()" class="case" name="case[]" value="1"/>&nbsp; &nbsp;TU100</td>
+      <td >CIVIC ENGAGEMENT</td>
+      <td>650001</td>
+      <td>3 หน่วยกิต</td>
+      <td>Mon. 9.30-12.30</td>
+    </tr>
+
+    <tr class=" w3-card-4 w3-hover-orange ">
+      <td><input type="checkbox" id="myCheck1"  onclick="myFunction1()" class="case" name="case[]" value="1" />&nbsp; &nbsp;TU100</td>
+      <td>CIVIC ENGAGEMENT</td>
+      <td>650002</td>
+      <td>3 หน่วยกิต</td>
+      <td>Mon. 13.30-16.30</td>
+    </tr>
+    <tr class=" w3-card-4 w3-hover-orange ">
+      <td><input type="checkbox" id="myCheck2"  onclick="myFunction2()" class="case" name="case[]" value="1" />&nbsp; &nbsp;TU100</td>
+      <td>CIVIC ENGAGEMENT</td>
+      <td>650101</td>
+      <td>3 หน่วยกิต</td>
+      <td>Sat. 9.30-12.30</td>
+    </tr>
+    <tr class=" w3-card-4 w3-hover-orange ">
+      <td><input type="checkbox" id="myCheck3"  onclick="myFunction3()" class="case" name="case[]" value="1" />&nbsp; &nbsp;TU100</td>
+      <td>CIVIC ENGAGEMENT</td>
+      <td>650102</td>
+      <td>3 หน่วยกิต</td>
+      <td>Sat.13.30-16.30</td>
+    </tr>
+    <tr class=" w3-card-4 w3-hover-orange ">
+      <td><input type="checkbox" id="myCheck4"  onclick="myFunction4()" class="case" name="case[]" value="1" />&nbsp; &nbsp;TU101</td>
+      <td>Thailand,ASEAN and the world</td>
+      <td>650001</td>
+      <td>3 หน่วยกิต</td>
+      <td>Fri.9.30-12.30</td>
+    </tr>
+    <tr class=" w3-card-4 w3-hover-orange ">
+      <td><input type="checkbox" id="myCheck5"  onclick="myFunction5()" class="case" name="case[]" value="1" />&nbsp; &nbsp;TU101</td>
+      <td>Thailand,ASEAN and the world</td>
+      <td>650002</td>
+      <td>3 หน่วยกิต</td>
+      <td>Fri.13.30-16.30</td>
+    </tr>
+    <tr class=" w3-card-4 w3-hover-orange ">
+      <td><input type="checkbox" id="myCheck6"  onclick="myFunction6()" class="case" name="case[]" value="1" />&nbsp; &nbsp;TU102</td>
+      <td>Social Life Skills</td>
+      <td>650001</td>
+      <td>3 หน่วยกิต</td>
+      <td>Tue.9.30-12.30</td>
+    </tr>
+    <tr class=" w3-card-4 w3-hover-orange ">
+      <td><input type="checkbox" id="myCheck7"  onclick="myFunction7()" class="case" name="case[]" value="1" />&nbsp; &nbsp;TU102</td>
+      <td>Social Life Skills</td>
+      <td>650002</td>
+      <td>3 หน่วยกิต</td>
+      <td>Tue.13.30-16.30</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+
+      </h5>
+     </form>    
+</body>
+<body>
+<div class="w3-container" >
+    <h6 align = 'left'>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<font color = "black" top:11000px> <b> CHECK</b> </strong></font><i class="fa fa-spinner w3-spin" style="font-size:20px"></i></p>
+    </h6> 
+</div>
+    <div style="overflow-x:auto;">
+  <table >
+
+    <tr class="w3-green w3-card-4 w3-animate-zoom" id="text" align="center" style="display:none">
+      <td>TU100</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIVIC ENGAGEMENT</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650001</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mon. 9.30-12.30</td>
+    </tr>
+
+     <tr class="w3-green w3-card-4  w3-animate-zoom" id="text1" align="center" style="display:none">
+      <td>TU100</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIVIC ENGAGEMENT</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650002</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mon. 13.30-16.30</td>
+    </tr>
+
+     <tr class="w3-green w3-card-4 w3-animate-zoom" id="text2" align="center" style="display:none">
+      <td>TU100</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIVIC ENGAGEMENT</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650101</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat. 9.30-12.30</td>
+    </tr>
+
+     <tr class="w3-green w3-card-4 w3-animate-zoom" id="text3" align="center" style="display:none">
+      <td>TU100</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIVIC ENGAGEMENT</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650102</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat.13.30-16.30</td>
+    </tr>
+
+     <tr class="w3-lime w3-card-4  w3-animate-zoom" id="text4" align="center" style="display:none">
+      <td>TU101</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand,ASEAN and the world</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650001</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fri.9.30-12.30</td>
+    </tr>
+
+     <tr class="w3-lime w3-card-4 w3-animate-zoom" id="text5" align="center" style="display:none">
+      <td>TU101</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thailand,ASEAN and the world</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650002</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fri.13.30-16.30</td>
+    </tr>
+
+     <tr class="w3-brown w3-card-4  w3-animate-zoom" id="text6" align="center" style="display:none">
+      <td>TU102</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Life Skills</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650001</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tue.9.30-12.30</td>
+    </tr>
+
+     <tr class="w3-brown w3-card-4  w3-animate-zoom" id="text7" align="center" style="display:none">
+      <td>TU102</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Life Skills</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;650002</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 หน่วยกิต</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tue.13.30-16.30</td>
+    </tr>
+
+
+</div>
+
+    <a href="approvestu.html"><input type="button"  class="btn11 w3-button w3-card-4 w3-round-xlarge w3-animate-zoom " value="ต่อไป"style="background-color:#33cc33; top:130%; overflow-x:auto;"></a>
+      <input  type="reset" class="rset w3-button w3-card-4 w3-round-xlarge w3-animate-zoom "  value="ยกเลิก"  style="background-color:red; top:130%;overflow-x:auto;"></a>
+
+
+    </table>
+ <script>
+                  function myFunction() {
+                  var x = document.getElementById("Demo");
+                     if (x.className.indexOf("w3-show") == -1) {
+                       x.className += " w3-show";
+                   } else {
+                       x.className = x.className.replace(" w3-show", "");
+                          }      
+                    }
+             </script>
+
+             <script>
+function myFunction11() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction1() {
+  var checkBox = document.getElementById("myCheck1");
+  var text = document.getElementById("text1");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction2() {
+  var checkBox = document.getElementById("myCheck2");
+  var text = document.getElementById("text2");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction3() {
+  var checkBox = document.getElementById("myCheck3");
+  var text = document.getElementById("text3");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction4() {
+  var checkBox = document.getElementById("myCheck4");
+  var text = document.getElementById("text4");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction5() {
+  var checkBox = document.getElementById("myCheck5");
+  var text = document.getElementById("text5");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction6() {
+  var checkBox = document.getElementById("myCheck6");
+  var text = document.getElementById("text6");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction7() {
+  var checkBox = document.getElementById("myCheck7");
+  var text = document.getElementById("text7");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
